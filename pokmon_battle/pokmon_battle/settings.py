@@ -78,10 +78,10 @@ WSGI_APPLICATION = 'pokmon_battle.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'database-1',
+        'NAME': 'pokemon',
         'USER': 'admin',
         'PASSWORD': 'Admin12345',
-        'HOST': 'database-1.cb6ce2qu0vga.us-east-1.rds.amazonaws.com',
+        'HOST': 'pokemon.cb6ce2qu0vga.us-east-1.rds.amazonaws.com',
         'PORT': '3306',  # Default MySQL port
     }
 }
