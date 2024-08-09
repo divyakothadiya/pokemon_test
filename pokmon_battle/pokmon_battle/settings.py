@@ -82,6 +82,9 @@ DATABASES = {
         'PASSWORD': 'Admin12345',
         'HOST': 'database-1.cb6ce2qu0vga.us-east-1.rds.amazonaws.com',
         'PORT': '3306',  # Default MySQL port
+        'OPTIONS': {
+            'driver': 'mysql-connector-python',
+        },
     }
 }
 
