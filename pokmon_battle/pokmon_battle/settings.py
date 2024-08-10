@@ -11,8 +11,7 @@ https://docs.djangoproject.com/en/5.0/ref/settings/
 """
 
 from pathlib import Path
-import pymysql
-pymysql.install_as_MySQLdb()
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -77,12 +76,8 @@ WSGI_APPLICATION = 'pokmon_battle.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'pokemon',
-        'USER': 'admin',
-        'PASSWORD': 'Admin12345',
-        'HOST': 'pokemon.cb6ce2qu0vga.us-east-1.rds.amazonaws.com',
-        'PORT': '3306',  # Default MySQL port
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',  # The path to the SQLite database file
     }
 }
 
