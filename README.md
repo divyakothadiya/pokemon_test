@@ -23,6 +23,9 @@
 6. Run the Development Server:
    python manage.py runserver
 
+## Unit Test Case
+   python manage.py test
+
 ## Deployed on AWS server
 There are 3 endpoint as per below
 1. get api/pokemon (including pagination: api/pokemon?page=2)
