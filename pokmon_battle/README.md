@@ -5,7 +5,6 @@
 - Python 3.x
 - Django
 - Django Rest Framework
-- Celery
 - pandas
 
 ## Setup
