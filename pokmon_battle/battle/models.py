@@ -11,8 +11,11 @@ class Pokemon(models.Model):
     defense = models.IntegerField(null=True, blank=True)
     sp_attack = models.IntegerField(null=True, blank=True)
     sp_defense = models.IntegerField(null=True, blank=True)
-    against_grass = models.FloatField()
-    against_poison = models.FloatField()
+    against_grass = models.FloatField(default=1.0)
+    against_poison = models.FloatField(default=1.0)
+
+    def __str__(self):
+        return self.name
 
 class Battle(models.Model):
     battle_id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
